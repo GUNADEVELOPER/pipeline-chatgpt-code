@@ -5,7 +5,7 @@ pipeline {
         AWS_ACCESS_KEY_ID     = credentials('aws-jenkins-credentials')
         AWS_SECRET_ACCESS_KEY = credentials('aws-jenkins-credentials1')
         TF_VAR_region         = 'ap-south-1'
-        TF_VAR_ami            = 'ami-0c55b159cbfafe1f0'
+        TF_VAR_ami            = 'ami-0d1e92463a5acf79d'
         TF_VAR_instance_type  = 't2.micro'
         TF_VAR_bucket_name    = 'example-bucket-123456'
     }
