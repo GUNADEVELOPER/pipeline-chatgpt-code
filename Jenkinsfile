@@ -11,9 +11,10 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
+            stage('Checkout') {
             steps {
-                git 'https://github.com/GUNADEVELOPER/pipeline-chatgpt-code.git'
+                checkout scmGit(branches: [[name: 'main']],
+                userRemoteConfigs: [[url: 'https://github.com/GUNADEVELOPER/pipeline-chatgpt-code.git']])
             }
         }
 
