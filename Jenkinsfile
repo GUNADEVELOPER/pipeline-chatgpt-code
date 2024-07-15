@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-repo/terraform-config.git'
+                git 'https://github.com/GUNADEVELOPER/pipeline-chatgpt-code.git'
             }
         }
 
