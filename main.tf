@@ -7,19 +7,15 @@ resource "aws_instance" "example" {
   instance_type = var.instance_type
 
   tags = {
-    Name = "ExampleInstance"
+    Name = "example-instance"
   }
 }
 
 resource "aws_s3_bucket" "example" {
   bucket = var.bucket_name
+}
+
+resource "aws_s3_bucket_acl" "example_acl" {
+  bucket = aws_s3_bucket.example.id
   acl    = "private"
-}
-
-output "instance_id" {
-  value = aws_instance.example.id
-}
-
-output "bucket_arn" {
-  value = aws_s3_bucket.example.arn
 }
