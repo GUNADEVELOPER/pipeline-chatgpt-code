@@ -1,11 +1,11 @@
 variable "region" {
   description = "The AWS region to create resources in"
-  default     = "us-west-2"
+  default     = "ap-south-1"
 }
 
 variable "ami" {
   description = "The AMI ID for the EC2 instance"
-  default     = "ami-0c55b159cbfafe1f0"
+  default     = "ami-0d1e92463a5acf79d"
 }
 
 variable "instance_type" {
